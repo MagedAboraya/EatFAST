@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatFAST — All You Dream Of is Here</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Roboto:wght@300;400;500;700&family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="noise"></div>
+
+    <header class="header">
+        <h1 class="logo"><span class="fa-solid fa-bolt"></span>EatFAST</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge">Since 2024</div>
+                <h1 class="hero-title">Eat<span class="text-gradient">FAST</span></h1>
+                <p class="hero-subtitle"><span class="typing-text"></span><span class="cursor">|</span></p>
+                <div class="hero-cta">
+                    <a href="#menu" class="btn-primary">Order Now <span class="fa-solid fa-arrow-right"></span></a>
+                    <a href="#about" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow"><span class="fa-solid fa-chevron-down"></span></div>
+            </div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="section-label">About Us</div>
+            <h2 class="section-title">Why <span class="text-gradient">EatFAST</span>?</h2>
+            <p class="section-desc">We serve the fastest, freshest, and most delicious food in town. Quality ingredients, bold flavors, delivered at lightning speed.</p>
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Menu Items</span>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number" data-target="5000">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number" data-target="30">0</span><span class="stat-suffix">min</span>
+                    <span class="stat-label">Avg. Delivery</span>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number" data-target="4.9">0</span>
+                    <span class="stat-label">Rating</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section menu-section">
+            <div class="section-label">Our Menu</div>
+            <h2 class="section-title">Choose Your <span class="text-gradient">Favorite</span></h2>
+            <p class="section-desc">Handcrafted with love, served with speed.</p>
+            <div class="cards">
+                <div class="card reveal" data-tilt>
+                    <div class="card-img">
+                        <img src="ChatGPT Image May 15, 2026, 09_25_32 PM.png" alt="Shawarma">
+                        <div class="card-badge">Bestseller</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-title">Shawarma</span>
+                        <div class="card-rating">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star-half-alt"></span>
+                            <span class="rating-text">4.5</span>
+                        </div>
+                        <p class="card-desc">Shawarma With Sauce — tender, spiced, and wrapped to perfection.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$12.99</span>
+                            <button class="btn-buy">Buy Now <span class="fa-solid fa-bag-shopping"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal" data-tilt>
+                    <div class="card-img">
+                        <img src="ChatGPT Image May 15, 2026, 09_25_32 PM.png" alt="Cheese Pizza">
+                        <div class="card-badge">Popular</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-title">Cheese Pizza</span>
+                        <div class="card-rating">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="rating-text">5.0</span>
+                        </div>
+                        <p class="card-desc">Pizza with Cheese — classic, melty, and absolutely irresistible.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$14.99</span>
+                            <button class="btn-buy">Buy Now <span class="fa-solid fa-bag-shopping"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card reveal" data-tilt>
+                    <div class="card-img">
+                        <img src="ChatGPT Image May 15, 2026, 09_25_32 PM.png" alt="Cheese Burger">
+                        <div class="card-badge">New</div>
+                    </div>
+                    <div class="card-body">
+                        <span class="card-title">Cheese Burger</span>
+                        <div class="card-rating">
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-solid fa-star"></span>
+                            <span class="fa-regular fa-star"></span>
+                            <span class="rating-text">4.0</span>
+                        </div>
+                        <p class="card-desc">Burger With Cheese — juicy beef, melted cheese, pure satisfaction.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$10.99</span>
+                            <button class="btn-buy">Buy Now <span class="fa-solid fa-bag-shopping"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3><span class="fa-solid fa-bolt"></span> EatFAST</h3>
+                <p>Fast food, faster delivery. All you dream of is here.</p>
+                <div class="footer-social">
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-x-twitter"></a>
+                    <a href="#" class="fa-brands fa-tiktok"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="3"></textarea>
+                    <button type="submit" class="btn-submit">Send <span class="fa-solid fa-paper-plane"></span></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 EatFAST. All rights reserved.</span>
+            <span>Made with <span class="fa-solid fa-heart"></span> for food lovers</span>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
